@@ -1,8 +1,8 @@
 import mysql.connector
 from conexao import conectar
 
-
 def exibir_dados_movimentacao():
+    conexao = conectar()
 
     if conexao:
         cursor = conexao.cursor()

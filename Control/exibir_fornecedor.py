@@ -13,7 +13,6 @@ def exibir_dados_fornecedor():
         print("\nFornecedor:")
 
         for id_fornecedor, nome_fornecedor, cnpj, telefone, email, prazo_entrega, id_produto in resultados:
-            print(f"ID: {id_fornecedor} | Nome: {nome_fornecedor} | CNPJ: {cnpj}| Telefone: {telefone}| Email: {email}| Prazo: {prazo_entrega}| Id produto: {id_produto} ")
-
+            print(f"ID: {id_fornecedor} | Nome: {nome_fornecedor} | CNPJ: {str(cnpj)[:4]}****** | Telefone: *****-{str(telefone)[-4:]} | Email: *****@***** | Prazo: {prazo_entrega} | ID produto: {id_produto}")
         cursor.close()
         conexao.close()

@@ -12,8 +12,8 @@ def exibir_dados_fabricante():
 
         print("\nFabricantes:")
 
-        for id_fabricante, nome_fabrica, cnpj,telefone,email,cidade,tipo_fabrica in resultados:
-            print(f"ID: {id_fabricante} | Nome: {nome_fabrica} | Cnpj: {cnpj}| Telefone: {telefone}| Email: {email}| Cidade: {cidade}|Tipo: {tipo_fabrica} ")
+        for id_fabricante, nome_fabrica, cnpj, telefone, email, cidade, tipo_fabrica in resultados:
+           print(f"ID: {id_fabricante} | Nome: {nome_fabrica} | CNPJ: {str(cnpj)[:4]}****** | Telefone: *****-{str(telefone)[-4:]} | Email: *****@***** | Cidade: {cidade} | Tipo: {tipo_fabrica}")
 
         cursor.close()
         conexao.close()

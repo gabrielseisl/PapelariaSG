@@ -14,7 +14,7 @@ from exibir_loja import exibir_dados_loja
 from cadastro_estoque_loja import inserir_dados_estoque_loja
 from exibir_estoque_loja import exibir_dados_estoque_loja
 from cadastro_categoria import inserir_dados_categoria
-from exibir_categoria import exibir_dados_estoque_categoria
+from exibir_categoria import  exibir_dados_estoque_categoria
 from cadastro_movimentacao import inserir_dados_movimentacao
 from exibir_movimentacao import exibir_dados_movimentacao
 from cadastro_venda import inserir_dados_vendas
@@ -38,6 +38,7 @@ while True:
     opcao = input("\nEscolha uma opção: ")
 
     if opcao == "1":
+        print("Fabricantes")
         inserir_dados_fabricante()
         exibir_dados_fabricante()
 
